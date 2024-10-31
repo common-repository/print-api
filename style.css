@@ -1,0 +1,102 @@
+/*
+License: GPL2
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program. If not, see <ttp://www.gnu.org/licenses/.
+*/
+
+/* Button container
+   ================ */
+
+.printapi-button {
+    border: 1px solid #ddd;
+    text-align: center;
+    /* Grid layout: */
+    display: inline-block;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    min-width: 150px;
+    width: 30%;
+}
+
+.printapi-button a:hover,
+.printapi-button a:active,
+.printapi-button a:focus {
+    text-decoration: none;
+}
+
+/* Button content
+   ============== */
+
+/* Layout
+   ------ */
+
+.printapi-button__thumbnail {
+    display: block;
+    width: 100%;
+}
+
+.printapi-button__text {
+    background-color: inherit;
+    padding: 15px;
+}
+
+.printapi-button__text > span {
+    display: block;
+}
+
+/* Text
+   ---- */
+
+/* Title: */
+
+.printapi-button__title {
+    font-weight: bold;
+}
+
+/* Price: */
+
+.printapi-button__price {
+    font-size: 0.85em;
+    line-height: 2;
+}
+
+/* Call to action: */
+
+.printapi-button__c2a {
+    color: #fff;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/* Error handling
+   ============== */
+
+.printapi-button--error {
+    border: 1px solid #c82601;
+    cursor: default;
+    padding: 15px;
+}
+
+/* Shortcode utility classes
+   ========================= */
+
+/* [printapi class="no-thumbnail" ...] */
+
+.printapi-button.no-thumbnail .printapi-button__thumbnail {
+    display: none;
+}
+
+/* [printapi class="no-text" ...] */
+
+.printapi-button.no-text .printapi-button__text {
+    display: none;
+}
